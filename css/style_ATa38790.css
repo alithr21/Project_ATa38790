@@ -1,0 +1,130 @@
+/* General stylesheet */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f0cc;
+    height: auto;
+    font-family: serif;
+}
+header{
+    background-color: black;
+    color: white;
+    height: 60px;
+    text-align: center;
+    border-bottom: 3px solid #62121c;
+}
+#hMeta{
+    font-family: Lucida Handwriting;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 700px;
+    
+    
+}
+    
+.div1 { grid-area: 1 / 1 / 6 / 2; 
+        background-color: #62121c;
+        border-right: 2px solid black;}
+.div2 { grid-area: 1 / 2 / 3 / 4;}
+img{
+    max-width:100%;
+    min-height:100%;
+}
+.div3 { grid-area: 1 / 4 / 3 / 6;}
+.div4 { grid-area: 3 / 2 / 4 / 4; 
+        text-align: center;
+        border-bottom: 3px solid #62121c;
+        border-radius: 2px;
+        }
+.div5 { grid-area: 3 / 4 / 4 / 6; 
+        text-align: center;
+        border-bottom: 3px solid #62121c;
+        border-radius: 2px}
+.div6 { grid-area: 4 / 2 / 6 / 6;
+        text-align: center; 
+        background-color: #d5bf86;
+        padding: 5%;
+        border: 2px solid #62121c;
+        border-radius: 2px;}
+
+#pMeta{
+    margin: 10% ;
+    font-family: MS UI Gothic;
+}
+#pContact{
+    margin: 10%; 
+    font-family: MS UI Gothic;
+}
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div7 { grid-area: 1 / 1 / 6 / 2; 
+        background-color: #62121c;
+        border-right: 2px solid black;}
+    .div8 { grid-area: 1 / 2 / 3 / 6;
+        text-align: center; 
+        background-color: #d5bf86; }
+    .div9 { grid-area: 3 / 2 / 5 / 6; }
+legend{
+    padding: 5px;
+    background-color: steelblue;
+    border-radius: 5px;
+    color: white;
+    margin:1%;
+    font-size: larger;
+    }
+input{
+    margin-bottom: 2px;
+    }
+input[type="button"], input[type="reset"]{
+    margin: 5px 2%;
+    width: 45%;
+    color: white;
+    background-color: #62121c;
+    }
+fieldset > div{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2px;
+    }
+fieldset > div > *{
+    flex: 1 1 200px; 
+    }
+#activity{
+    max-height: 200px;
+    margin: 2% 35%;
+}
+@media only screen and (max-width:599px){
+    img{
+        max-height:100px;
+    }
+    body{
+        max-height: 500px;
+    }
+    
+}
+textarea{
+    width: 100%;
+    
+    }
+    
+footer{
+    text-align: right;
+    font-style: italic;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 10px;
+}

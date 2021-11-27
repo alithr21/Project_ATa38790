@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="AliTaheri">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style_ATa38790.css">
+        <link rel="stylesheet" href="css/nav_ATa38790.css">
+        <script src="script/project_ATa38790.js"></script>
+        <title>Project</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="hAli">A L I</h1>
+            <h4 id="hMeta">" Lets take you to Metaverse "</h4>
+        </header>
+        <div class="formGrid">
+            <div class="div7"><nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page2_ATa38790.html">What We Do</a></li>
+                    <li><a href="page3_ATa38790.html">Request Form</a></li>
+                </ul>
+            </nav> 
+            </div>
+            <div class="div8"> 
+                <form action="" method="get">
+                    <fieldset>
+                        <legend>Personal Inorfmation</legend>
+                        <div>
+                            <label for="FullName">Full Name</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="John Smith" required> 
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="joe@somewhere.com" required> 
+                        </div>
+                        <div>
+                            <label for="gender">Gender</label>
+                            <span>
+                                <input type="radio" name="gender" id="gender" value="female" > Female
+                                <input type="radio" name="gender" id="gender" value="male"> Male
+                            </span>
+                            
+                        </div>
+                        <div>
+                            <label for="birthday">Birthday:</label>
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" id="phone" placeholder="(xxx) xxx xxxx" > 
+                        </div>
+                        <div>
+                            <span>
+                                <p class="contactC">Preffered Mode of Contact:
+                                    <input type="checkbox" name="contactC" value="phone">By phone
+                                    <input type="checkbox" name="contactC" value="WhatsApp">Via WhatsApp
+                                    <input type="checkbox" name="contactC" value="email">Via Email
+                                </p>
+                            </span>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Inquiry</legend>
+                        <div>
+                            <label for="type">Type of Inquiry</label>
+                            <span>
+                            <input type="checkbox" name="type" value="business">Business
+                            <input type="checkbox" name="type" value="personal">Personal
+                            </span>
+                        </div>
+                        <div>
+                            <label for="about">Intrested in</label>
+                            <span>
+                                <input type="radio" name="about" id="about" value="nft" > NFT
+                                <input type="radio" name="about" id="about" value="meta"> Metaverse
+                            </span>
+                        </div>
+                        <div>
+                            <label for="select">Select Activity</label>
+                            <select id="select" name="select" onchange="changeImg(this)">
+                              <option value="nft">Select Activity</option>
+                              <option value="images/realestate.jpg" >Real Estate</option>
+                              <option value="images/art.jpg" >Art</option>
+                              <option value="images/music.jpg" >Music</option>
+                              <option value="images/influencer.jpg" >Influencer</option>
+                            </select>
+                        </div> 
+                        <div>
+                            <span>
+                                <label for="description">Brief description of your Inquiry</label>
+                                <textarea name="des" id="des" cols="30" rows="5">Tell us your concerns.</textarea>
+                            </span>
+                        </div>
+                        <div>
+                            <input type="button" value="Submit" 
+                            onclick="apply(this.form)">
+                            <input type="reset" value="Clear Form">
+                        </div>  
+                    </fieldset>
+                </form>
+            </div>
+            <div class="div9"> 
+                <h5>SUMMERY:</h5>
+                <p id="output">
+                    
+                </p>
+                <figure>
+                    <img id="activity" src="images/nft.jpg" alt="activity">
+                </figure>
+
+            </div>
+        </div>
+        <footer>CSIS 1280 &copy; Ali Taheri Fall 2021</footer> 
+    </body>
+</html>

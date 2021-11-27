@@ -1,0 +1,79 @@
+/* Page2 stylesheet */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f0cc;
+    height: auto;
+    font-family: serif;
+}
+header{
+    background-color: black;
+    color: white;
+    height: 60px;
+    text-align: center;
+    border-bottom: 3px solid #62121c;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6; }
+    .div2 { grid-area: 2 / 1 / 4 / 3; }
+    .div3 { grid-area: 2 / 3 / 4 / 4; }
+    .div4 { grid-area: 2 / 4 / 4 / 6; }
+    .div5 { grid-area: 4 / 1 / 6 / 6; }
+
+iframe {
+    display:block;
+    width:100%;
+    border: 2px solid #62121c;
+    border-radius: 3px;
+    }
+ h4{
+    text-align: center;
+    }
+ p{
+    margin: 2%;
+    text-align: justify;
+    }
+table {
+    border: 1px solid #000000;
+    border-collapse: collapse; 
+    margin: 0 auto;  
+    padding: 0px;
+    table-layout: fixed;
+    min-width: 100%;}
+table th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #000000;
+    background:#3c8292;
+    color:#FFFFFF;
+    font-weight:bold;
+    text-align:center}
+table td{
+    padding: 8px;
+    border: 1px solid #000000;}
+table tr{
+    background-color: #dddddd;
+    color:#000000;
+    text-align:center;}
+@media only screen and (max-width:599px){
+    body{
+        max-height: 500px;
+    }
+    }
+footer{
+    text-align: right;
+    font-style: italic;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 10px;
+    }
